@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Labs | Diệp Hiển Thông</title>
+  <style>
+    :root{--green:#075b51;--accent:#f5be52;--ink:#20302e;--muted:#566762;--bg:#f4f7f6}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:var(--green)}
+    header{background:linear-gradient(120deg,#074b43,#0b7161);color:white;padding:50px max(20px,calc((100vw - 1000px)/2)) 55px}
+    header small{font-weight:700;letter-spacing:.1em;color:#c7ebe0}h1{font-size:clamp(30px,5vw,46px);margin:12px 0}header p{margin:5px 0}main{max-width:1000px;margin:-20px auto 40px;padding:0 20px}.card{background:white;border-radius:14px;padding:24px;margin:18px 0;box-shadow:0 4px 18px #093d3310}h2{margin-top:0;color:var(--green)}.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.lab{border:1px solid #deebe7;border-radius:12px;padding:20px}.lab h3{margin:0 0 7px}.links{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.btn{background:var(--green);color:white;text-decoration:none;border-radius:8px;padding:9px 13px;font-size:14px;display:inline-block}.btn:hover{background:#064238}.portrait{border:2px dashed #b9d7ce;padding:18px;border-radius:10px;color:var(--muted);display:inline-block}footer{text-align:center;color:var(--muted);font-size:13px;padding-bottom:28px}
+  </style>
+</head>
+<body>
+  <header>
+    <small>PORTFOLIO THỰC HÀNH · JAVASCRIPT LABS</small>
+    <h1>Diệp Hiển Thông</h1>
+    <p><strong>MSSV:</strong> 31241026737</p>
+    <p><strong>Lớp học phần:</strong> 26C1INF50902701</p>
+    <p><strong>Học phần:</strong> Phát triển ứng dụng thương mại điện tử</p>
+    <p><strong>Giảng viên:</strong> TS. Nguyễn Mạnh Tuấn</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Giới thiệu & mục tiêu học tập</h2>
+      <p>Trang tổng hợp bài thực hành JavaScript thuộc ba Lab: Language Foundations, DOM and Events và jQuery. Mục tiêu của em là nắm vững cú pháp JavaScript, biết thao tác với nội dung trang web, xử lý sự kiện, kiểm tra biểu mẫu và sử dụng jQuery để xây dựng giao diện tương tác.</p>
+      <div class="portrait">Ảnh đại diện: thay khu vực này bằng ảnh của bạn trước khi nộp (nếu giảng viên yêu cầu).</div>
+    </section>
+    <section class="card">
+      <h2>Danh sách bài thực hành</h2>
+      <div class="labs">
+        <article class="lab"><h3>Lab 08</h3><p><strong>Language Foundations</strong></p><p>11 Exercise · Biến, mảng, hàm, đối tượng và Browser Console.</p><div class="links"><a class="btn" href="Lab08/exercise8-1.html">Mở Exercise 8.1</a><a href="Lab08/lab08-walkthrough11.html">Bài 8.11</a></div></article>
+        <article class="lab"><h3>Lab 09</h3><p><strong>DOM and Events</strong></p><p>8 Exercise · Chọn phần tử, thay đổi DOM, xử lý sự kiện và biểu mẫu.</p><div class="links"><a class="btn" href="Lab09/lab09-walkthrough01.html">Mở Exercise 9.1</a><a href="Lab09/lab09-walkthrough08.html">Bài 9.8</a></div></article>
+        <article class="lab"><h3>Lab 10</h3><p><strong>jQuery</strong></p><p>10 Exercise · Selectors, animation, HTTP GET và jqXHR.</p><div class="links"><a class="btn" href="Lab10/lab10-walkthrough01.html">Mở Exercise 10.1</a><a href="Lab10/lab10-walkthrough10.html">Bài 10.10</a></div></article>
+      </div>
+      <p><small>Lưu ý: Các liên kết chỉ chạy khi đã đặt đúng các thư mục Lab08, Lab09 và Lab10 bên cạnh file index.html.</small></p>
+    </section>
+    <section class="card"><h2>Kiến thức đã học</h2><p><strong>Lab 08:</strong> Cách nhúng JavaScript vào HTML, dùng Console để kiểm tra lỗi, thao tác với String, Date, Math, Array, Function và Object.</p><p><strong>Lab 09:</strong> Chọn phần tử bằng DOM API, duyệt quan hệ cha–con, thêm/xóa phần tử, lắng nghe sự kiện và kiểm tra form.</p><p><strong>Lab 10:</strong> Dùng jQuery selectors, xử lý sự kiện, tạo hiệu ứng động và nhận dữ liệu JSON thông qua GET.</p></section>
+    <section class="card"><h2>Tự đánh giá</h2><p>Qua ba Lab, em đã hiểu rõ hơn cách JavaScript hoạt động trong trình duyệt và vai trò của ngôn ngữ này đối với một website thương mại điện tử. Ở Lab 08, em củng cố kiến thức cơ bản về biến, mảng, hàm và đối tượng. Sang Lab 09, em thực hành thao tác DOM, xử lý sự kiện chuột và kiểm tra dữ liệu nhập trong biểu mẫu. Với Lab 10, em biết cách sử dụng jQuery để chọn phần tử, tạo hiệu ứng và lấy dữ liệu JSON. Khó khăn lớn nhất của em là xác định chính xác phần tử HTML và xử lý lỗi khi mã không chạy như dự kiến. Việc kiểm tra bằng Chrome Developer Tools và chạy thử từng bài giúp em cải thiện kỹ năng đọc lỗi, đối chiếu kết quả và tổ chức mã nguồn.</p></section>
+  </main>
+  <footer>JavaScript Labs · Diệp Hiển Thông · 31241026737</footer>
+</body>
+</html>
