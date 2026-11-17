@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 8.10 - JavaScript Objects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            padding: 30px;
+            margin: 0;
+            color: #243247;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px #00000012;
+        }
+
+        h1 {
+            color: #174d8b;
+        }
+
+        .student {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .description {
+            background: #edf4ff;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #dbe3ef;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .product h3 {
+            color: #174d8b;
+            margin-top: 0;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 12px 0;
+        }
+
+        .total {
+            background: #dbeafe;
+            border-radius: 6px;
+            padding: 12px;
+            font-weight: bold;
+            color: #174d8b;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+
+    <script src="js/exercise8-10.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Exercise 8.10 - Creating JavaScript Objects</h1>
+
+        <p class="student">
+            Sinh viên: Diệp Hiển Thông<br>
+            MSSV: 31241026737
+        </p>
+
+        <div class="description">
+            <h2>Nội dung thực hành</h2>
+            <p>
+                Tạo đối tượng JavaScript,
+                sử dụng thuộc tính và phương thức,
+                Object Literal và Constructor Function
+                để quản lý thông tin đơn hàng.
+            </p>
+        </div>
+
+        <h2>Danh sách sản phẩm</h2>
+
+        <div class="products" id="productList"></div>
+
+        <footer>
+            JavaScript Lab 08 - Exercise 8.10<br>
+            Diep Hien Thong - 31241026737
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 8.9 - Functions as Objects</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            margin: 0;
+            padding: 30px;
+            color: #243247;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px #00000012;
+        }
+
+        h1 {
+            color: #174d8b;
+            font-size: 28px;
+        }
+
+        .student {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .description {
+            background: #edf4ff;
+            border-left: 5px solid #2563eb;
+            padding: 18px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .description h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border-bottom: 1px solid #dbe3ef;
+            padding: 16px;
+        }
+
+        th {
+            color: #475569;
+            text-align: left;
+        }
+
+        td {
+            text-align: right;
+        }
+
+        .total {
+            background: #dbeafe;
+            color: #174d8b;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .total th,
+        .total td {
+            color: #174d8b;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+
+    <!-- Liên kết file JavaScript bên ngoài -->
+    <script src="js/exercise8-9.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Exercise 8.9 - Functions as Objects</h1>
+
+    <p class="student">
+        Sinh viên: Diệp Hiển Thông<br>
+        MSSV: 31241026737
+    </p>
+
+    <div class="description">
+        <h2>Nội dung thực hành</h2>
+        <p>
+            Sử dụng hàm JavaScript để tính thuế
+            và tổng giá trị đơn hàng.
+            Thực hành Functions as Objects
+            và Anonymous Functions.
+        </p>
+    </div>
+
+    <h2>Shopping Cart - Order Summary</h2>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <td>Sample Product</td>
+        </tr>
+
+        <tr>
+            <th>Price</th>
+            <td>$15.00</td>
+        </tr>
+
+        <tr>
+            <th>Quantity</th>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <th>Subtotal</th>
+            <td id="subtotalResult">--</td>
+        </tr>
+
+        <tr>
+            <th>Tax Rate</th>
+            <td id="taxRateResult">--</td>
+        </tr>
+
+        <tr>
+            <th>Tax</th>
+            <td id="taxResult">--</td>
+        </tr>
+
+        <tr class="total">
+            <th>Total</th>
+            <td id="totalResult">--</td>
+        </tr>
+    </table>
+
+    <footer>
+        JavaScript Lab 08 - Exercise 8.9<br>
+        Diep Hien Thong - 31241026737
+    </footer>
+
+</div>
+
+</body>
+</html>

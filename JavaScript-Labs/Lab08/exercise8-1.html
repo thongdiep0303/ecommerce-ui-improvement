@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8.1 - JavaScript Test</title>
+</head>
+<body>
+    <h1>Exercise 8.1 - Enabling/Disabling JavaScript</h1>
+    <p>Sinh viên: Diệp Hiển Thông</p>
+    <p>MSSV: 31241026737</p>
+
+    <h3>Kiểm tra trạng thái JavaScript:</h3>
+
+    <p id="result">JavaScript chưa được thực thi.</p>
+
+    <script>
+        document.getElementById("result").innerHTML =
+            "JavaScript is ENABLED!";
+        document.getElementById("result").style.color = "green";
+    </script>
+
+    <noscript>
+        <p style="color:red">
+            JavaScript is DISABLED!
+        </p>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 8.11 - Arrays of Objects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #243247;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px #00000012;
+        }
+
+        h1 {
+            color: #174d8b;
+        }
+
+        .student {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .description {
+            background: #edf4ff;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+            padding: 18px;
+            margin: 25px 0;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px;
+        }
+
+        .country-card {
+            border: 1px solid #dbe3ef;
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .country-card img {
+            width: 70px;
+            height: 45px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .country-card h3 {
+            color: #174d8b;
+            margin: 0 0 15px;
+        }
+
+        .detail {
+            padding: 7px 0;
+            border-bottom: 1px solid #edf2f7;
+            font-size: 14px;
+        }
+
+        .detail strong {
+            color: #475569;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+
+    <script src="js/exercise8-11.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Exercise 8.11 - Arrays of Objects</h1>
+
+    <p class="student">
+        Sinh viên: Diệp Hiển Thông<br>
+        MSSV: 31241026737
+    </p>
+
+    <div class="description">
+        <h2>Nội dung thực hành</h2>
+        <p>
+            Sử dụng mảng chứa nhiều đối tượng Country,
+            kết hợp vòng lặp for và for...in
+            để truy xuất thông tin các quốc gia.
+        </p>
+    </div>
+
+    <h2>Danh sách các quốc gia</h2>
+
+    <div class="country-grid" id="countryList"></div>
+
+    <footer>
+        JavaScript Lab 08 - Exercise 8.11<br>
+        Diep Hien Thong - 31241026737
+    </footer>
+
+</div>
+
+</body>
+</html>
