@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 9.1 - Basic DOM Selection</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Lab 09 CSS -->
+    <link rel="stylesheet" href="css/lab09.css">
+
+    <style>
+        body {
+            background: #f3f6fb;
+            font-family: Arial, sans-serif;
+            color: #243247;
+            padding: 25px 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px #00000012;
+        }
+
+        #pageTitle {
+            color: #174d8b;
+            font-weight: bold;
+        }
+
+        .student-info {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        #stories {
+            margin-top: 25px;
+        }
+
+        #stories img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        #features {
+            margin-top: 30px;
+            padding: 25px 10px;
+            border-radius: 10px;
+        }
+
+        #features .count-number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #features .center-icons {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .student-footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- DOM Selection -->
+    <div class="row" id="first">
+
+        <h1 id="pageTitle">DOM Example</h1>
+
+        <p class="student-info">
+            Sinh viên: Diệp Hiển Thông<br>
+            MSSV: 31241026737<br>
+            Lab 09 - Exercise 9.1
+        </p>
+
+        <p>
+            This is a sample file to be used
+            with DOM manipulation.
+        </p>
+
+        <p>
+            <textarea
+                class="form-control"
+                rows="3"
+                id="msgArea"
+                placeholder="Messages will show up here"></textarea>
+        </p>
+
+    </div>
+
+    <!-- Stories -->
+    <div class="row" id="stories">
+
+        <div class="col-md-4">
+            <img
+                src="images/5857298322.jpg"
+                class="img-responsive"
+                alt="Story image 1">
+
+            <p>
+                Donec id elit non mi porta gravida
+                at eget metus. Fusce dapibus,
+                tellus ac cursus commodo,
+                tortor mauris condimentum nibh,
+                ut fermentum massa justo sit amet risus.
+            </p>
+
+            <p>
+                <button class="btn btn-primary" type="button">
+                    View details
+                </button>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <img
+                src="images/8710320515.jpg"
+                class="img-responsive"
+                alt="Story image 2">
+
+            <p>
+                Donec id elit non mi porta gravida
+                at eget metus. Fusce dapibus,
+                tellus ac cursus commodo,
+                tortor mauris condimentum nibh,
+                ut fermentum massa justo sit amet risus.
+            </p>
+
+            <p>
+                <button class="btn btn-primary" type="button">
+                    View details
+                </button>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <img
+                src="images/9494464567.jpg"
+                class="img-responsive"
+                alt="Story image 3">
+
+            <p>
+                Donec id elit non mi porta gravida
+                at eget metus. Fusce dapibus,
+                tellus ac cursus commodo,
+                tortor mauris condimentum nibh,
+                ut fermentum massa justo sit amet risus.
+            </p>
+
+            <p>
+                <button class="btn btn-primary" type="button">
+                    View details
+                </button>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="row" id="features">
+
+        <ul class="list-unstyled">
+
+            <li>
+                <div class="col-md-3">
+                    <div class="center-icons">
+                        <i class="fa fa-coffee fa-3x"></i>
+
+                        <div class="count-number">20000</div>
+
+                        <span class="count-title">
+                            cups of coffee
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="col-md-3">
+                    <div class="center-icons">
+                        <i class="fa fa-book fa-3x"></i>
+
+                        <div class="count-number">24</div>
+
+                        <span class="count-title">
+                            chapters
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="col-md-3">
+                    <div class="center-icons">
+                        <i class="fa fa-desktop fa-3x"></i>
+
+                        <div class="count-number">48</div>
+
+                        <span class="count-title">
+                            presentations
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="col-md-3">
+                    <div class="center-icons">
+                        <i class="fa fa-file-image-o fa-3x"></i>
+
+                        <div class="count-number">560</div>
+
+                        <span class="count-title">
+                            diagrams
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="student-footer">
+        JavaScript Lab 09 - Exercise 9.1<br>
+        Diệp Hiển Thông - 31241026737
+    </div>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="js/exercise9-1.js"></script>
+
+</body>
+</html>
