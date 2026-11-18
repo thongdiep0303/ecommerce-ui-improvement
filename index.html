@@ -1,131 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh Sách Sản Phẩm Cải Tiến</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nhật ký học tập Front-end nâng cao: DevTools, Chrome Dino và Responsive Design" />
+  <title>Nhật ký học Front-end | Dino & Responsive</title>
+  <style>
+    :root{--ink:#14263f;--muted:#60718b;--line:#dbe6ee;--teal:#087f80;--cream:#f5f8fa;--white:#fff;--orange:#f9ac54}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream)}a{color:inherit}header{background:#102a44;color:white;padding:20px max(24px,calc((100vw - 1100px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}header strong{letter-spacing:.07em;font-size:.9rem}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{text-decoration:none;color:#d9eaf0;font-size:.92rem}nav a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:auto;padding:0 24px}.hero{padding:76px 0 60px;background:linear-gradient(120deg,#12324f 0%,#0a6670 100%);color:white}.eyebrow{font-weight:750;letter-spacing:.16em;text-transform:uppercase;color:#a9e5d7;font-size:.8rem}.hero h1{font-size:clamp(2.2rem,6vw,4.3rem);line-height:1.11;max-width:800px;margin:16px 0}.hero p{font-size:1.15rem;max-width:680px;color:#e1f1f3}.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.tags span{padding:6px 14px;border:1px solid #ffffff70;border-radius:24px;font-size:.85rem}section{padding:50px 0}h2{font-size:clamp(1.6rem,4vw,2.25rem);line-height:1.25;margin:0 0 14px}h3{margin:0 0 7px}.lead{color:var(--muted);max-width:750px;margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);padding:26px;border-radius:16px;box-shadow:0 6px 30px #14263f08}.card b.num{display:inline-block;font-size:2rem;color:var(--teal);line-height:1;margin-bottom:12px}.card p{color:var(--muted);margin-bottom:0}code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}pre{overflow:auto;background:#112c42;color:#dcf9e8;border-radius:12px;padding:20px;font-size:.9rem} .split{display:grid;grid-template-columns:1.1fr 1fr;gap:25px;align-items:start}.note{border-left:4px solid var(--orange);padding:12px 16px;background:#fff7eb;border-radius:0 10px 10px 0;color:#544331}.demo{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.browser{background:#eaf1f5;border-radius:12px;padding:8px}.browser-top{display:flex;gap:6px;margin:2px 0 9px}.dot{width:9px;height:9px;border-radius:50%;background:#a5b6c6}.viewport{display:flex;min-height:180px;gap:0;overflow:hidden;border-radius:7px}.left{background:#d6f5eb;width:70%;display:flex;align-items:center;justify-content:center;color:#126a61;font-size:1.4rem;font-weight:800}.right{background:#ffe0c2;width:30%;display:flex;align-items:center;justify-content:center;color:#975421;font-size:1.4rem;font-weight:800}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}button{border:1px solid #b5cbd6;background:white;border-radius:9px;padding:9px 12px;cursor:pointer;font:inherit;color:var(--ink)}button[aria-pressed="true"]{background:var(--teal);color:white;border-color:var(--teal)}.demo[data-mode="tablet"] .viewport{flex-direction:column}.demo[data-mode="tablet"] .left,.demo[data-mode="tablet"] .right{width:100%;min-height:90px}.demo[data-mode="mobile"] .viewport{flex-direction:column}.demo[data-mode="mobile"] .left{width:100%;min-height:180px}.demo[data-mode="mobile"] .right{display:none}.steps{counter-reset:step;display:grid;gap:12px}.step{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.step::before{counter-increment:step;content:counter(step,decimal-leading-zero);display:inline-block;color:var(--teal);font-weight:800;margin-right:14px}.step strong{display:inline}.step p{margin:5px 0 0 37px;color:var(--muted)}.key{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.key div{background:white;padding:20px;border:1px solid var(--line);border-radius:12px}.key small{display:block;color:var(--muted);margin-top:6px}.end{background:#e1eff0}.footer{padding:28px 24px;background:#102a44;color:#c8d9e2;text-align:center;font-size:.85rem} .pill{display:inline-block;background:#e2f2f0;color:#076d70;padding:3px 10px;border-radius:40px;font-size:.8rem;font-weight:700} @media(max-width:800px){.grid{grid-template-columns:1fr}.split,.key{grid-template-columns:1fr}.hero{padding:50px 0}.wrap{padding:0 18px}}@media print{header, .controls{display:none}.hero{padding:25px 0;background:white;color:#14263f}.hero p,.eyebrow{color:#14263f}section{padding:16px 0}.card,.step,.demo{box-shadow:none;break-inside:avoid}body{background:white}.footer{background:white;color:#14263f}}
+  </style>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0VF0BYYQZY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0VF0BYYQZY');
-</script>
 <body>
+<header><strong>FE / LEARNING JOURNAL</strong><nav aria-label="Điều hướng"><a href="#overview">Tổng quan</a><a href="#dino">Chrome Dino</a><a href="#responsive">Responsive</a><a href="#takeaways">Tổng kết</a></nav></header>
+<main>
+  <div class="hero"><div class="wrap"><div class="eyebrow">Nhật ký thực hành · Front-end nâng cao</div><h1>Từ Chrome Dino đến giao diện Responsive</h1><p>Một buổi học về cách kiểm tra JavaScript bằng DevTools, điều chỉnh trạng thái trò chơi và xây dựng trang web tự thích ứng trên nhiều kích thước màn hình.</p><div class="tags"><span>JavaScript</span><span>Chrome DevTools</span><span>CSS Media Queries</span><span>HTML picture</span></div></div></div>
+  <section id="overview" class="wrap"><span class="pill">01 / MỤC TIÊU</span><h2>Hôm nay mình đã học gì?</h2><p class="lead">Nội dung tổng kết từ bài thực hành trên lớp, diễn giải theo ba nhóm kỹ năng thay vì chỉ trình bày ảnh chụp.</p><div class="grid"><article class="card"><b class="num">01</b><h3>Thử nghiệm JavaScript</h3><p>Sử dụng Console để truy cập trạng thái game và thử nghiệm thay đổi tốc độ, lực nhảy.</p></article><article class="card"><b class="num">02</b><h3>Thiết kế linh hoạt</h3><p>Dùng media queries để chuyển từ hai cột sang một cột hoặc ẩn bớt nội dung.</p></article><article class="card"><b class="num">03</b><h3>Ảnh theo thiết bị</h3><p>Sử dụng <code>&lt;picture&gt;</code> để chọn ảnh phù hợp ở các ngưỡng chiều rộng khác nhau.</p></article></div></section>
+  <section id="dino" class="wrap"><span class="pill">02 / JAVASCRIPT</span><h2>Thực hành với Chrome Dino</h2><div class="split"><div><p>Chrome DevTools cho phép quan sát và chạy JavaScript ngay trên trang đang mở. Trong bài mẫu, đối tượng <code>Runner.instance_</code> được dùng để thao tác với trò chơi.</p><pre><code>// Kiểm tra tốc độ hiện tại
+Runner.instance_.currentSpeed;
 
-    <header class="header">
-        <h1>Sản Phẩm Nổi Bật</h1>
-        <p>Giao diện tối ưu hóa thẻ hiển thị giá và khuyến mãi</p>
-    </header>
+// Thử tăng tốc độ
+Runner.instance_.setSpeed(60);
 
-    <main class="container">
-        <section aria-labelledby="product-section-title">
-            <h2 id="product-section-title" class="section-title">
-                Danh sách sản phẩm
-            </h2>
+// Thử điều chỉnh lực nhảy
+Runner.instance_.setJumpVelocity(22);</code></pre><p class="note">Các lệnh phụ thuộc vào phiên bản trò chơi và môi trường trình duyệt. Hãy kiểm tra trực tiếp trước khi đưa ảnh kết quả vào báo cáo.</p></div><div class="steps"><div class="step"><strong>Quan sát giá trị ban đầu</strong><p>Bài mẫu ghi tốc độ khoảng 6.8 và lực nhảy mặc định −10.</p></div><div class="step"><strong>Điều chỉnh tốc độ</strong><p>Thử mức 60 để xem sự thay đổi nhịp độ.</p></div><div class="step"><strong>Điều chỉnh lực nhảy</strong><p>Thử mức 22 rồi quan sát khả năng vượt chướng ngại vật.</p></div><div class="step"><strong>Ghi nhận bằng chứng</strong><p>Chụp màn hình Console kèm game, mô tả kết quả thực tế.</p></div></div></div></section>
+  <section id="responsive" class="wrap"><span class="pill">03 / CSS</span><h2>Responsive không chỉ là thu nhỏ trang</h2><p class="lead">Bố cục bài thực hành gốc gồm hai vùng LEFT (70%) và RIGHT (30%). Khi thay đổi viewport, media queries có thể xếp chồng hoặc ẩn các vùng này.</p><div class="split"><div class="demo" data-mode="desktop" id="layout-demo"><h3>Thử các kích thước màn hình</h3><div class="browser"><div class="browser-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="viewport"><div class="left">LEFT 70%</div><div class="right">RIGHT 30%</div></div></div><div class="controls" role="group" aria-label="Chọn kích thước mô phỏng"><button data-size="desktop" aria-pressed="true">Desktop &gt; 768px</button><button data-size="tablet" aria-pressed="false">Tablet ≤ 768px</button><button data-size="mobile" aria-pressed="false">Mobile 321–479px</button></div><p id="layout-caption" aria-live="polite">Hai vùng nằm cạnh nhau theo tỷ lệ 70% / 30%.</p></div><div><h3>Media queries từ bài học</h3><pre><code>@media screen and (max-width: 768px) {
+  .left, .right { width: 100%; }
+}
 
-            <div class="product-grid">
+@media screen and (min-width: 321px)
+       and (max-width: 479px) {
+  .right { display: none; }
+}
 
-                <!-- Sản phẩm 1: Tai nghe Bluetooth -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="badge">-25%</span>
-                        <img
-                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80"
-                            alt="Tai nghe chụp tai Bluetooth"
-                        >
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">
-                            Tai nghe chụp tai Bluetooth khử ồn chủ động
-                        </h3>
-                        <div class="product-price">
-                            <span class="current-price">1.490.000₫</span>
-                            <del class="original-price">1.990.000₫</del>
-                        </div>
-                        <button type="button" class="btn-add">
-                            Thêm vào giỏ
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Sản phẩm 2: Bàn phím cơ -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="badge">-15%</span>
-                        <img
-                            src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80"
-                            alt="Bàn phím cơ không dây"
-                        >
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">
-                            Bàn phím cơ không dây layout 75% switch êm
-                        </h3>
-                        <div class="product-price">
-                            <span class="current-price">1.250.000₫</span>
-                            <del class="original-price">1.480.000₫</del>
-                        </div>
-                        <button type="button" class="btn-add">
-                            Thêm vào giỏ
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Sản phẩm 3: Chuột công thái học -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="badge">-30%</span>
-                        <img
-                            src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&q=80"
-                            alt="Chuột không dây công thái học"
-                        >
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">
-                            Chuột công thái học kết nối đa thiết bị
-                        </h3>
-                        <div class="product-price">
-                            <span class="current-price">690.000₫</span>
-                            <del class="original-price">990.000₫</del>
-                        </div>
-                        <button type="button" class="btn-add">
-                            Thêm vào giỏ
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Sản phẩm 4: Giá đỡ laptop -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="badge">-10%</span>
-                        <img
-                            src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&q=80"
-                            alt="Giá đỡ laptop hợp kim nhôm"
-                        >
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">
-                            Giá đỡ laptop hợp kim nhôm tản nhiệt
-                        </h3>
-                        <div class="product-price">
-                            <span class="current-price">350.000₫</span>
-                            <del class="original-price">390.000₫</del>
-                        </div>
-                        <button type="button" class="btn-add">
-                            Thêm vào giỏ
-                        </button>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-    </main>
-
+@media print {
+  .left { display: none; }
+  .right { width: 100%; }
+}</code></pre></div></div></section>
+  <section class="wrap"><span class="pill">04 / HTML</span><h2>Thẻ &lt;picture&gt; giúp chọn ảnh phù hợp</h2><p class="lead">Ở bài gốc, các nguồn logo khác nhau được chọn dựa trên độ rộng viewport. Đây là ví dụ về art direction trong HTML.</p><div class="key"><div><strong>≥ 1000px</strong><small>Ảnh dành cho màn hình lớn (logo UEH trong bài mẫu)</small></div><div><strong>600–999px</strong><small>Ảnh dành cho màn hình vừa (logo CTD)</small></div><div><strong>&lt; 600px</strong><small>Ảnh dự phòng cho màn hình nhỏ (logo BIT)</small></div><div><strong>Chế độ in</strong><small>CSS @media print thay đổi bố cục khi in hoặc xuất PDF</small></div></div></section>
+  <section class="end" id="takeaways"><div class="wrap"><span class="pill">05 / TỔNG KẾT</span><h2>Điều mình rút ra sau buổi học</h2><p>Điểm thú vị là JavaScript và CSS giải quyết hai bài toán khác nhau: JavaScript tác động đến <strong>hành vi</strong> của ứng dụng, còn CSS media queries tác động đến <strong>cách giao diện trình bày</strong> theo từng môi trường. Khi kết hợp với DevTools, mình có thể kiểm thử và quan sát thay đổi nhanh hơn.</p><p><strong>Bước thực hành tiếp theo:</strong> thử thiết kế trang sản phẩm thương mại điện tử responsive, có danh sách sản phẩm và bộ lọc được ẩn/hiện phù hợp trên màn hình nhỏ.</p></div></section>
+</main>
+<footer class="footer">Nhật ký học tập Front-end nâng cao · Nội dung tham khảo từ tài liệu thực hành trên lớp · Hãy điền thông tin cá nhân trong báo cáo Word</footer>
+<script>
+  const demo=document.getElementById('layout-demo');
+  const caption=document.getElementById('layout-caption');
+  const descriptions={desktop:'Hai vùng nằm cạnh nhau theo tỷ lệ 70% / 30%.',tablet:'Cả hai vùng rộng 100% và xếp theo chiều dọc.',mobile:'Vùng RIGHT được ẩn, chỉ còn vùng LEFT.'};
+  document.querySelectorAll('[data-size]').forEach(button=>{
+    button.addEventListener('click',()=>{
+      const size=button.dataset.size;demo.dataset.mode=size;caption.textContent=descriptions[size];
+      document.querySelectorAll('[data-size]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    });
+  });
+</script>
 </body>
 </html>
